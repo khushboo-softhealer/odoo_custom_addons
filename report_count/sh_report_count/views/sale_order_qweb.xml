@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template inherit_id="sale.report_saleorder_document" id="sh_report_saleorder_document">
+        <xpath expr="//div[@class='row mt-4 mb-2' and @id='informations']" position="inside">
+            <t t-if="doc.sh_count_report">
+                <div t-if="doc.user_id.name" class="col-auto col-3 mw-100 mb-2">
+                    <t t-set="count" t-value="doc.sh_count_report"/>
+                    <strong>Count:</strong><br/>
+                    <span class="m-0" t-out="count"></span>
+                </div>    
+            </t>
+        </xpath>
+    </template>
+</odoo>

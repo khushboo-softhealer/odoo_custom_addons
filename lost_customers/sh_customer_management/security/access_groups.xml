@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+    <!-- Lost Customer Manager -->
+    <record id="group_module_category_sh_lost_customer" model="res.groups">
+        <field name="name">Lost Customer Manager</field>
+        <field name="category_id" ref="base.module_category_sales_sales"/>
+        <field name="implied_ids" eval="[(4, ref('sales_team.group_sale_manager'))]"/>
+    </record>
+
+    <!--  -->
+    
+    
+</odoo>

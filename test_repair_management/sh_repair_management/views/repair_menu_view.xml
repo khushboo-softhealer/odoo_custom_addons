@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <menuitem
+        id="sh_request_repair_main_menu"
+        name="Repair Management"
+        sequence="10"/>
+
+    <menuitem
+        id="sh_request_repair_menu"
+        name="Request"
+        action="sh_request_repair_action"
+        parent="sh_repair_management.sh_request_repair_main_menu"
+        sequence="10"/>
+
+    
+    <menuitem
+        id="sh_repair_request_line_menu"
+        name="Request Lines"
+        action="sh_repair_request_line_action"
+        parent="sh_repair_management.sh_request_repair_main_menu"
+        sequence="10"/>
+</odoo>

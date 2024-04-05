@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <menuitem
+        id="lost_customer_wizard_sale_menu"
+        name="Customer Wizard"
+        action="action_lost_customer_wizard"
+        groups="sh_customer_management.group_module_category_sh_lost_customer"
+        parent="sale.sale_menu_root"
+        sequence="43"/>
+</odoo>
